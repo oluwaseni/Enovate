@@ -1,0 +1,32 @@
+<div class="row coverall">
+    <div class="col-md-6 cowry">
+       <div class="welcome_div">
+           <span class="welcome">
+            Welcome back, 
+           </span> <br>
+           <span class="to_continue">
+            Sign in to continue
+           </span>
+       </div> 
+    </div>
+    <div class="col-md-6 forms" >
+        <div class="form_box">
+        <form  [formGroup]="login"  (submit)="logins()"  autocomplete="off" >
+            <div class="form-group">
+              <label for="email">Email address:</label>
+              <input  formControlName="emailAddress" type="email" class="inps form-control" id="email">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input  formControlName="password" type="password" class="inps form-control" id="pwd">
+            </div>
+            <div class="checkbox">
+              <!-- <label><input type="checkbox"> Remember me</label> -->
+              <span style="color: #3f48f3; font-size: 70%;">Forgot Password?</span>
+            </div>
+            <span style="font-size: 90%;">New User? <span style="color: #3f48f3; cursor: pointer;" (click)="createAccount()">Create Account</span></span>
+            <button type="submit" class="btn submits btn-default">Sign In</button>
+          </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,52 @@
+
+<nav class="navbar navbar-expand-lg" style="color: #0733ad !important; padding-right: 5%; padding-left: 5%; ">
+    <a class="navbar-brand" href="#">Enovate</a>
+    <button class="navbar-toggler" type="button" style="color: #0733ad !important;" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="create()">Create</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div  style="float: right; color: red !important;">
+        <button class="btn" (click)="logout()"> Logout </button>
+    </div>
+  </nav>
+<div class="coverAll" style="padding: 5%;">
+    
+<div class="row offset-1">
+    <!-- <div *ngFor="let some of listAll" class="col-md-4"> -->
+        <div  *ngFor="let some of listAll" class="col-md-3 col-sm-3 card pl-0 pt-4" style="width: 18rem;">
+            <img [src]="some.avatar" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{some.first_name}}<i (click)="edit()"  style="float: right !important; color: rgb(9, 133, 30) !important; 
+                cursor: pointer;" class="fas fa-pencil-alt"></i></h5>
+              <p class="card-text">{{some.last_name}} <i style="float: right !important; color: red !important; 
+                cursor: pointer;" (click)="delete()" class="fa fa-trash" aria-hidden="true"></i></p>
+
+              <a href="#" style="font-size: 70%;" class="btn btn-primary">{{some.email}}</a>
+            </div>
+          </div>
+          
+    <!-- </div> -->
+</div>
+
+</div>

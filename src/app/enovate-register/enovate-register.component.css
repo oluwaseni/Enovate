@@ -1,0 +1,48 @@
+.coverall{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 12%;
+    background-color: #e9f3f3;
+}
+
+.welcome_div{
+    font-size: 250%;
+    font-weight: bold !important;
+}
+.welcome{
+    font-size: 120%;
+    color: #100647 !important;
+}
+
+.to_continue{
+    color: #888585 !important;
+}
+
+.form_box{
+    background-color: #ffffff;
+    padding: 10%;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.submits{
+    background-color: #3f48f3;
+    color: #ffffff;
+    float: right;
+}
+
+.inps{
+    background-color: #ffffff !important;
+    height: 50px;
+}
+.inps:focus{
+    background-color: #ffffff !important;
+    
+}
+.inps:hover{
+    background-color: #ffffff !important;
+}
+.inps::after{
+    background-color: #ffffff !important;
+}
